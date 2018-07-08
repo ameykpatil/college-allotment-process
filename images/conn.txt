@@ -1,0 +1,37 @@
+Dim wstemp As Workspace
+Dim dbtemp As Database
+Dim rstemp As Recordset
+
+Set wstemp = DBEngine.Workspaces(0)
+Set dbtemp = wstemp.OpenDatabase("", False, False, "ODBC;DSN=Oracle;USR=scott;PWD=tiger")
+Set rstemp = dbtemp.OpenRecordset(myquery.Text, dbOpenDynaset, dbSQLPassThrough)
+howmany = 0
+Combo1.Clear
+Do Until rstemp.EOF
+msgbox rstemp(0)
+rstemp.MoveNext
+howmany = howmany + 1
+Loop
+
+####
+Dim oconn As New ADODB.Connection
+Dim rs As New ADODB.Recordset
+Dim strSQL As String
+
+Private Sub Command1_Click()
+Form2.Show
+Me.Hide
+End Sub
+
+Private Sub Command2_Click()
+strSQL = "select Seatno from STUDENT where fname='amey'"
+Set oconn = New ADODB.Connection
+oconn.Open "Provider=msdaora;Data Source=Amey.world;User Id=Amey;Password=programing;"
+rs.CursorType = adOpenStatic
+rs.CursorLocation = adUseClient
+rs.LockType = adLockOptimistic
+rs.Open strSQL, oconn, , , adCmdText
+Set Text1.DataSource = rs
+Form6.Show
+Me.Hide
+End Sub
