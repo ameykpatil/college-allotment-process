@@ -1,0 +1,26 @@
+CAP stands for College Allotment Process.
+
+EXISTING SYSTEM:
+The current admission procedure for autonomous engineering colleges works as follows:
+1.Student fills an application form
+2.Student submits it at a submission centre.
+3.Every student is given a rank based on his/her marks.
+4.Then a counselling round is held in which the student has to visit a fixed centre.
+5.Here,in the order of ranks, the students are asked to choose from the vacant seats.
+6.Student has to confirm his/her admission then and there.
+
+Drawbacks:
+1.Student has to go to one of the centres and purchase an application form.
+2.The student loses his chance if he fails to reach the counselling centre at the given time.
+3.The student has to take admission then and there. Even a slight delay is also not allowed.
+4.It may happen that the fixed location of the centre may not be convenient for all students. 
+5.Since the procedure is manual it is prone to errors.
+6.Time and money is wasted in transportation. 
+7.As there is only one counselling centre,it will be crowded.
+8.Allocation of manpower is another problem.	
+
+
+PROPOSED SYSTEM:
+The CAP (College Admission Process) works as follows:
+1.Student fills an application form and submits it online .
+2.
